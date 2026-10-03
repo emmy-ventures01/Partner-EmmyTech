@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Partnership Application | EmmyTech</title>
+
+    <meta name="description"
+          content="Apply to become a partner with EmmyTech.">
+
+    <link rel="icon"
+          href="https://i.postimg.cc/HnSxSr4K/IMG-20261003-WA0042.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/apply.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="container navbar-inner">
+
+        <a href="index.html" class="brand">
+
+            <img
+                src="https://i.postimg.cc/HnSxSr4K/IMG-20261003-WA0042.jpg"
+                alt="EmmyTech Logo">
+
+            <span>EmmyTech</span>
+
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="apply.html" class="active">
+                Partnership
+            </a>
+
+            <a href="status.html">
+                Check Application
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- HEADER -->
+
+<header class="application-header">
+
+    <h1>Partnership Application</h1>
+
+    <p>
+        Tell us about yourself, your professional background,
+        and how you would like to partner with EmmyTech.
+    </p>
+
+</header>
+
+
+<!-- PROGRESS -->
+
+<div class="progress-wrapper">
+
+    <div class="progress-info">
+
+        <span id="stepText">
+            Step 1 of 5
+        </span>
+
+        <span id="progressPercent">
+            20%
+        </span>
+
+    </div>
+
+    <div class="progress-bar">
+
+        <div
+            class="progress-fill"
+            id="progressFill">
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- APPLICATION FORM -->
+
+<form
+    id="partnershipForm"
+    class="application-form">
+
+
+    <!-- STEP 1 -->
+
+    <section class="form-step active">
+
+        <h2>Personal Information</h2>
+
+        <p class="step-description">
+            Please provide your basic personal information.
+        </p>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    First Name <span class="required">*</span>
+                </label>
+
+                <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Last Name <span class="required">*</span>
+                </label>
+
+                <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last name"
+                    required>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    Email Address <span class="required">*</span>
+                </label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Phone Number <span class="required">*</span>
+                </label>
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+234..."
+                    required>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    Country <span class="required">*</span>
+                </label>
+
+                <input
+                    type="text"
+                    name="country"
+                    placeholder="Country"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    City
+                </label>
+
+                <input
+                    type="text"
+                    name="city"
+                    placeholder="City">
+
+            </div>
+
+        </div>
+
+
+        <!-- PROFILE PICTURE -->
+
+        <div class="form-group">
+
+            <label>
+                Profile Picture <span class="required">*</span>
+            </label>
+
+            <input
+                type="file"
+                id="profileImage"
+                name="profileImage"
+                accept="image/*"
+                required>
+
+            <p class="file-note">
+                Upload a clear photo of yourself.
+            </p>
+
+            <div class="image-preview">
+
+                <img
+                    id="profilePreview"
+                    alt="Profile preview">
+
+            </div>
+
+        </div>
+
+
+        <div class="form-navigation">
+
+            <span></span>
+
+            <button
+                type="button"
+                onclick="nextStep()">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- STEP 2 -->
+
+    <section class="form-step">
+
+        <h2>Professional Information</h2>
+
+        <p class="step-description">
+            Tell us about your professional background,
+            organization and experience.
+        </p>
+
+
+        <div class="form-group">
+
+            <label>
+                Profession / Role <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="profession"
+                placeholder="e.g. Web Developer"
+                required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Company / Organization
+            </label>
+
+            <input
+                type="text"
+                name="company"
+                placeholder="Company or brand name">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Company / Brand Logo
+            </label>
+
+            <input
+                type="file"
+                id="companyLogo"
+                name="companyLogo"
+                accept="image/*">
+
+            <p class="file-note">
+                Upload your company or brand logo if available.
+            </p>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Years of Experience <span class="required">*</span>
+            </label>
+
+            <select
+                name="experience"
+                required>
+
+                <option value="">
+                    Select experience
+                </option>
+
+                <option>
+                    Less than 1 year
+                </option>
+
+                <option>
+                    1 – 2 years
+                </option>
+
+                <option>
+                    3 – 5 years
+                </option>
+
+                <option>
+                    6 – 10 years
+                </option>
+
+                <option>
+                    10+ years
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Website
+            </label>
+
+            <input
+                type="url"
+                name="website"
+                placeholder="https://example.com">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Social / Professional Profile
+            </label>
+
+            <input
+                type="url"
+                name="social"
+                placeholder="https://...">
+
+        </div>
+
+
+        <div class="form-navigation">
+
+            <button
+                type="button"
+                onclick="previousStep()">
+
+                ← Back
+
+            </button>
+
+            <button
+                type="button"
+                onclick="nextStep()">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- STEP 3 -->
+
+    <section class="form-step">
+
+        <h2>Partnership Details</h2>
+
+        <p class="step-description">
+            Tell us what type of partnership you are interested in.
+        </p>
+
+
+        <div class="form-group">
+
+            <label>
+                Partnership Type <span class="required">*</span>
+            </label>
+
+            <div class="options-grid">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="partnershipType"
+                        value="Technology"
+                        required>
+
+                    Technology
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="partnershipType"
+                        value="Business">
+
+                    Business
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="partnershipType"
+                        value="Creative">
+
+                    Creative
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="partnershipType"
+                        value="Marketing">
+
+                    Marketing
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="partnershipType"
+                        value="Project Collaboration">
+
+                    Project Collaboration
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="partnershipType"
+                        value="Other">
+
+                    Other
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Partnership Proposal <span class="required">*</span>
+            </label>
+
+            <textarea
+                name="proposal"
+                placeholder="Describe your partnership proposal..."
+                required></textarea>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                What Value Can You Bring? <span class="required">*</span>
+            </label>
+
+            <textarea
+                name="value"
+                placeholder="Explain the value you can bring to EmmyTech..."
+                required></textarea>
+
+        </div>
+
+
+        <div class="form-navigation">
+
+            <button
+                type="button"
+                onclick="previousStep()">
+
+                ← Back
+
+            </button>
+
+            <button
+                type="button"
+                onclick="nextStep()">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- STEP 4 -->
+
+    <section class="form-step">
+
+        <h2>Skills & Experience</h2>
+
+        <p class="step-description">
+            Tell us about your skills, previous experience
+            and availability.
+        </p>
+
+
+        <div class="form-group">
+
+            <label>
+                Skills
+            </label>
+
+            <div class="options-grid">
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="skills"
+                        value="Web Development">
+
+                    Web Development
+                </label>
+
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="skills"
+                        value="UI/UX Design">
+
+                    UI/UX Design
+                </label>
+
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="skills"
+                        value="Graphic Design">
+
+                    Graphic Design
+                </label>
+
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="skills"
+                        value="Marketing">
+
+                    Marketing
+                </label>
+
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="skills"
+                        value="Content Creation">
+
+                    Content Creation
+                </label>
+
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="skills"
+                        value="Business Development">
+
+                    Business Development
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Previous Work
+            </label>
+
+            <textarea
+                name="previousWork"
+                placeholder="Tell us about your previous projects or experience..."></textarea>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Availability <span class="required">*</span>
+            </label>
+
+            <select
+                name="availability"
+                required>
+
+                <option value="">
+                    Select availability
+                </option>
+
+                <option>
+                    Full-time
+                </option>
+
+                <option>
+                    Part-time
+                </option>
+
+                <option>
+                    Project-based
+                </option>
+
+                <option>
+                    Flexible
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-navigation">
+
+            <button
+                type="button"
+                onclick="previousStep()">
+
+                ← Back
+
+            </button>
+
+            <button
+                type="button"
+                onclick="nextStep()">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- STEP 5 -->
+
+    <section class="form-step">
+
+        <h2>Final Details</h2>
+
+        <p class="step-description">
+            Complete the final details and review the
+            partnership agreement before submitting.
+        </p>
+
+
+        <div class="form-group">
+
+            <label>
+                Why Do You Want to Partner With EmmyTech?
+                <span class="required">*</span>
+            </label>
+
+            <textarea
+                name="whyPartner"
+                placeholder="Explain why you want to partner with EmmyTech..."
+                required></textarea>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                What Are Your Expectations?
+                <span class="required">*</span>
+            </label>
+
+            <textarea
+                name="expectations"
+                placeholder="Tell us your expectations..."
+                required></textarea>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Additional Information
+            </label>
+
+            <textarea
+                name="additional"
+                placeholder="Anything else you would like us to know?"></textarea>
+
+        </div>
+
+
+        <!-- FORMAL AGREEMENT -->
+
+        <div class="agreement-box">
+
+            <h3>
+                Partnership Expression of Interest
+                and Agreement
+            </h3>
+
+
+            <div class="agreement-letter">
+
+                <p>
+                    <strong>
+                        PARTNERSHIP EXPRESSION OF INTEREST
+                        AND AGREEMENT
+                    </strong>
+                </p>
+
+
+                <p>
+                    I,
+                    <strong id="applicantName">
+                        the applicant
+                    </strong>,
+                    hereby formally express my interest in
+                    establishing a professional partnership and
+                    collaborative relationship with
+                    <strong>EmmyTech</strong>.
+                </p>
+
+
+                <p>
+                    I acknowledge that EmmyTech is committed to
+                    innovation, creativity, technology, professional
+                    development, and the successful execution of
+                    projects and business initiatives. I understand
+                    that a partnership may involve collaboration,
+                    shared responsibilities, professional services,
+                    project development, business opportunities, or
+                    other activities mutually agreed upon by both
+                    parties.
+                </p>
+
+
+                <p>
+                    By submitting this application, I confirm that
+                    all information and materials provided by me are
+                    true, accurate, and complete to the best of my
+                    knowledge. I understand that EmmyTech may review
+                    the information provided in order to assess my
+                    suitability, experience, skills, professional
+                    background, proposal, and potential contribution
+                    to the partnership.
+                </p>
+
+
+                <p>
+                    I further acknowledge that submitting this
+                    application does not constitute an automatic
+                    acceptance or guarantee of partnership. Any
+                    partnership between myself and EmmyTech shall
+                    only become effective after the application has
+                    been reviewed and both parties have mutually
+                    agreed upon the relevant terms, responsibilities,
+                    expectations, and conditions.
+                </p>
+
+
+                <p>
+                    I agree to communicate professionally and
+                    respectfully with EmmyTech throughout the
+                    application and partnership process. I understand
+                    that any information exchanged during the
+                    partnership process should be handled responsibly
+                    and that both parties are expected to act with
+                    honesty, integrity, professionalism, and mutual
+                    respect.
+                </p>
+
+
+                <p>
+                    I understand that the nature and scope of any
+                    future collaboration may be discussed and defined
+                    separately based on the specific partnership
+                    opportunity. Where necessary, additional
+                    agreements, terms, or written documentation may
+                    be provided before a partnership or project
+                    officially begins.
+                </p>
+
+
+                <p>
+                    I also understand that EmmyTech reserves the
+                    right to review, approve, decline, or request
+                    additional information regarding any partnership
+                    application at its discretion.
+                </p>
+
+
+                <p>
+                    By selecting <strong>AGREE</strong> below, I
+                    confirm that I have carefully read and understood
+                    this partnership statement, that I accept the
+                    conditions stated above, and that I wish to
+                    proceed with my application for consideration
+                    by EmmyTech.
+                </p>
+
+
+                <p>
+                    <strong>
+                        Applicant Name:
+                    </strong>
+
+                    <span id="letterApplicantName">
+                        ________________________
+                    </span>
+                </p>
+
+
+                <p>
+                    <strong>
+                        Brand / Organization:
+                    </strong>
+
+                    EmmyTech
+                </p>
+
+
+                <p>
+                    <strong>
+                        Date:
+                    </strong>
+
+                                <span id="agreementDate">
+                        __________________
+                    </span>
+
+                </p>
+
+            </div>
+
+
+            <!-- AGREEMENT OPTIONS -->
+
+            <div class="agreement-choice">
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="agreement"
+                        value="AGREE"
+                        required>
+
+                    <span>
+                        AGREE
+                    </span>
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="agreement"
+                        value="DISAGREE">
+
+                    <span>
+                        DISAGREE
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="form-navigation">
+
+            <button
+                type="button"
+                onclick="previousStep()">
+
+                ← Back
+
+            </button>
+
+
+            <button
+                type="submit">
+
+                Submit Application
+
+            </button>
+
+        </div>
+
+    </section>
+
+</form>
+
+
+<script src="js/form.js"></script>
+
+</body>
+</html>
